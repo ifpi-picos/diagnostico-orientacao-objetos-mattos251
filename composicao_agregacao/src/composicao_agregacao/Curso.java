@@ -1,26 +1,30 @@
 package composicao_agregacao;
 
+import java.util.ArrayList;
+import java.util.List;
+
+
 public class Curso {
 	
-	String nome;
-	Disciplina disciplina1;
-	Disciplina disciplina2;
+	private String nome;
+	private List<Disciplina> disciplinas;
 	
-	public Curso(String nome, Disciplina disciplina1, Disciplina disciplina2) {
+	
+	public Curso(String nome) {
 		// TODO Auto-generated constructor stub
-		super();
 		this.nome = nome;
-		this.disciplina1 = disciplina1;
-		this.disciplina2 = disciplina2;
+		this.disciplinas = new ArrayList<Disciplina>();
+		System.out.println(this.disciplinas + this.nome);
 		
 	}
 	
-	void adcionardisciplina() {
+	public void adcionaDisciplina(Disciplina disciplina) {
+		this.disciplinas.add(disciplina);
 		
 	}
 	
-	void removerdisciplina(){
-		
+	public void removeDisciplina(Disciplina disciplina){
+		this.disciplinas.remove(disciplina);
 	}
 
 }

@@ -3,9 +3,15 @@ package composicao_agregacao;
 public class Main {
 
 	public static void main(String[] args) {
-		Disciplina disciplina1 = new Disciplina("POO",12345);
-		Disciplina disciplina2 = new Disciplina("POG", 12567);
-		Curso curso = new Curso("POG", disciplina1,disciplina2);
+		Curso POG = new Curso( "Gambiarra");
+		Professor babuino =  new Professor("babuino" );
+		
+		Disciplina POO = new Disciplina("POO", 70);
+		
+		
+		
+		
+		
 	}
 }
 
